@@ -8,6 +8,7 @@ class Employee {
         this.service = service
     }
 
-numberYears(){
-
+    numberYears() {
+        hiringdate
+    }
 }
