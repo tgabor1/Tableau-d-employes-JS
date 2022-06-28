@@ -8,3 +8,25 @@ let tableEmployees = [employee1, employee2, employee3, employee4, employee5]
 
 let elementEmployees = document.querySelector('#employees')
 
+let originalEmployees = ''
+
+tableEmployees.forEach(employee => { originalEmployees += '<tr><td>' + employee.name + '</td><td>' + employee.firstname + '</td><td>' + employee.hiringdate + '</td><td>' + employee.position + '</td><td>' + employee.salary + '</td><td>' + employee.service + '</td></tr>' })
+elementEmployees.innerHTML = originalEmployees
+
+let today = new Date('2022-06-28')
+let olday = new Date('2018-05-05')
+
+function dateDiff(dateold, datenew){
+    let diff = datenew - dateold
+}
+
+function dayDiff(d1, d2)
+{
+  d1 = d1.getTime() / 86400000;
+  d2 = d2.getTime() / 86400000;
+  return new Number(d2 - d1).toFixed(0);
+}
+
+// const nouvelleDate = new Date("2020-10-29").toLocaleDateString('fr-FR', { month:'numeric', day:'numeric'})
+// const date=  new Date().toLocaleDateString('fr-FR', { month:'numeric', day:'numeric'})
+// console.log(nouvelleDate);

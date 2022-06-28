@@ -7,8 +7,4 @@ class Employee {
         this.salary = salary
         this.service = service
     }
-
-    numberYears() {
-
-    }
 }
